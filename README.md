@@ -1,7 +1,7 @@
 A forked from node-notfier.
 
 
-A terminal notifier not provide any action and event handling so just both branch code and comiple new app.
+A terminal notifier not provide any action and event handling so merge both branch code and comiple new app.
 
 This is combination of Terminal notifier and alerter
 https://github.com/julienXX/terminal-notifier
