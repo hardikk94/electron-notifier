@@ -1,0 +1,89 @@
+{
+  "_from": "yac-notifier@0.0.5",
+  "_id": "yac-notifier@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-3ZFwD71DZb3SaAiHg9jSU/NmW8WcwTe6rhMzcAWy7Y2EobRVvm9G2MVTBjAMdstmaTWPKWsyvou2PUq9pROtuw==",
+  "_location": "/yac-notifier",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "yac-notifier@0.0.5",
+    "name": "yac-notifier",
+    "escapedName": "yac-notifier",
+    "rawSpec": "0.0.5",
+    "saveSpec": null,
+    "fetchSpec": "0.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/yac-notifier/-/yac-notifier-0.0.5.tgz",
+  "_shasum": "11e9d541a3e799f90b6509949d372903dc4a873a",
+  "_spec": "yac-notifier@0.0.5",
+  "_where": "/Users/hardik.kothari/Documents/Projects-Data/yac-desktop",
+  "author": {
+    "name": "Mikael Brevik"
+  },
+  "bugs": {
+    "url": "https://github.com/SoFriendly/yac-notifier/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "growly": "^1.3.0",
+    "is-wsl": "^1.1.0",
+    "semver": "^5.5.0",
+    "shellwords": "^0.1.1",
+    "which": "^1.3.0"
+  },
+  "deprecated": false,
+  "description": "A fork of the famous node-notifier made specifically for YAC chat!",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
+    "jest": "^23.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.12.1"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "homepage": "https://github.com/SoFriendly/yac-notifier#readme",
+  "jest": {
+    "testRegex": "/test/[^_]*.js",
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "./test/_test-matchers.js"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "name": "yac-notifier",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SoFriendly/yac-notifier.git"
+  },
+  "scripts": {
+    "example": "node ./example/message.js",
+    "example:mac": "node ./example/advanced.js",
+    "example:mac:input": "node ./example/macInput.js",
+    "example:windows": "node ./example/toaster.js",
+    "lint": "eslint example/*.js lib/*.js notifiers/*.js test/**/*.js index.js",
+    "precommit": "lint-staged",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
+  "version": "0.0.5"
+}
